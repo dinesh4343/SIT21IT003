@@ -1,4 +1,41 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+}
 
 .home {
   height: 100vh;
@@ -380,3 +417,370 @@ header.sticky ul li a {
 
 /* Add more media queries as needed */
 
+/* Facilities Section */
+.wrapper2 {
+  position: relative;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.wrapper2 .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.wrapper2 .heading {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.wrapper2 .heading h5 {
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: #CC8C18;
+  padding-top: 20px;
+}
+
+.wrapper2 .heading h2 {
+  color: #24416B;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+  margin: 10px 0 20px 0;
+}
+
+.wrapper2 .content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-top: 40px;
+}
+
+.wrapper2 .box {
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.wrapper2 i {
+  margin: 10px 0 15px 0;
+  color: #CC8C18;
+  font-size: 30px;
+}
+
+.wrapper2 h3 {
+  font-size: 20px;
+}
+
+.wrapper2 span {
+  padding: 10px;
+  background: #F5E8D1;
+  color: #CC8C18;
+  border-radius: 50%;
+}
+
+.wrapper2 .box:hover {
+  background: #CC8C18;
+  cursor: pointer;
+}
+
+.wrapper2 .box:hover span {
+  background: #fff;
+}
+
+.wrapper2 .box:hover p,
+.wrapper2 .box:hover h3,
+.wrapper2 .box:hover i {
+  color: white;
+}
+
+/* Room Section */
+.room.wrapper2 {
+  padding: 80px 0;
+}
+
+.room .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.room .heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.room .heading h5 {
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: #CC8C18;
+  padding-top: 20px;
+}
+
+.room .heading h2 {
+  color: #24416B;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+  margin: 10px 0 20px 0;
+}
+
+.room .content {
+  display: flex;
+  margin-top: 40px;
+}
+
+.room .left {
+  width: 50%;
+}
+
+.room .grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.room .box {
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.room i {
+  font-size: 30px;
+  color: #CC8C18;
+  margin-bottom: 15px;
+}
+
+.room p {
+  color: #a4a4a4;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.room h3 {
+  font-size: 20px;
+  color: #24416B;
+  margin-bottom: 20px;
+}
+
+.room img {
+  width: 100%;
+  height: auto;
+}
+
+.room .box:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+/* Timer Section */
+.timer.about.wrapper {
+  position: relative;
+  text-align: center;
+  padding-top: 12%;
+}
+
+.timer.about.wrapper .background::after,
+.timer.about.wrapper::before,
+.timer.about.wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.timer.about.wrapper::before {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.timer.about.wrapper::after {
+  z-index: 1;
+  top: 0%;
+}
+
+.timer.about.wrapper::before {
+  z-index: 1;
+  bottom: 0%;
+}
+
+.timer.about.wrapper h2,
+.timer.about.wrapper h5 {
+  color: white;
+  text-align: center;
+}
+
+.timer.about.wrapper .container {
+  position: relative;
+}
+
+.timer.about.wrapper h2 span {
+  font-family: 'Great Vibes', cursive;
+}
+
+.timer.about.wrapper .clock span {
+  color: white;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.timer.about.wrapper .clock p {
+  color: white;
+  font-size: 18px;
+}
+
+/* Offers Section */
+.offer.mtop {
+  padding: 80px 0;
+}
+
+.offer .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.offer .heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.offer .heading h5 {
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: #CC8C18;
+  padding-top: 20px;
+}
+
+.offer .heading h3 {
+  color: #24416B;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+  margin: 10px 0 20px 0;
+}
+
+.offer .content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  margin-top: 40px;
+}
+
+.offer .box {
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  transition: 0.5s;
+}
+
+.offer img {
+  width: 100%;
+  height: auto;
+}
+
+.offer h4 {
+  color: #24416B;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.offer .rate {
+  color: #CC8C18;
+}
+
+.offer .rate i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.offer p {
+  color: #a4a4a4;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.offer h5 {
+  color: #CC8C18;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.offer button {
+  background: #CC8C18;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.offer button:hover {
+  background: #fae587;
+}
+
+/* Restaurant Section */
+.area.top {
+  position: relative;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.area.top .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.area.top .heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.area.top .heading h5 {
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: #CC8C18;
+  padding-top: 20px;
+}
+
+.area.top .heading h3 {
+  color: #24416B;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+  margin: 10px 0 20px 0;
+}
+
+.area.top .content {
+  display: flex;
+  margin-top: 40px;
+}
+
+.area.top ul {
+  list-style: none;
+  padding: 0;
+}
+
+.area.top ul li {
+  color: #24416B;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.area.top p {
+  color: #a4a4a4;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.area.top button {
+  background: #CC8C18;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.area.top button:hover {
+  background: #fae587;
+}
